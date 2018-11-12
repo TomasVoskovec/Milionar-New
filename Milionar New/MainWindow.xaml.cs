@@ -22,6 +22,7 @@ namespace Milionar_New
     {
         public MainWindow()
         {
+            //sdasdasd
             InitializeComponent();
         }
     }
