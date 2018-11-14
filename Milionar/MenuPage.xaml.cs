@@ -24,5 +24,16 @@ namespace Milionar
         {
             InitializeComponent();
         }
+
+        Frame mainFrame = new Frame();
+        public MenuPage(Frame frame) : this()
+        {
+            mainFrame = frame;
+        }
+
+        private void highScores_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

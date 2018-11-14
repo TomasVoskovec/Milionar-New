@@ -19,6 +19,6 @@
         </Grid.RowDefinitions>
         <Label x:Name="price" Foreground="#FFF" Content="null" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" Grid.RowSpan="2" Grid.ColumnSpan="2"></Label>
         <Button Content="Uložit" Click="save_click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Margin="30"></Button>
-        <Button Content="Menu" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="30"></Button>
+        <Button Content="Menu" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="30" Click="menu_click"></Button>
     </Grid>
 </Page>

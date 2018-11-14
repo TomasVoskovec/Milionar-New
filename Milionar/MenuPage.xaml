@@ -13,7 +13,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Content="Nejvyšší Skóre" Margin="50"></Button>
-        <Button Grid.Row="1" Content="Nová Hra" Margin="50"></Button>
+        <Button Grid.Row="0" Content="Nejvyšší Skóre" Margin="50" Click="highScores_click"></Button>
+        <Button Grid.Row="1" Content="Nová Hra" Margin="50" Click="newGame_click"></Button>
     </Grid>
 </Page>

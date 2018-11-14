@@ -91,5 +91,10 @@ namespace Milionar
 
             main.Navigate(new HighScoresPage());
         }
+
+        private void menu_click(object sender, RoutedEventArgs e)
+        {
+            main.Navigate(new MenuPage(main));
+        }
     }
 }
