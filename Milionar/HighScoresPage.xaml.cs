@@ -29,6 +29,12 @@ namespace Milionar
             WriteHighScores();
         }
 
+        Frame mainFrame = new Frame();
+        public HighScoresPage(Frame frame) : this()
+        {
+            mainFrame = frame;
+        }
+
         List<Score> jsonReadScore()
         {
             using (StreamReader r = new StreamReader(@"../../Json/score.json"))
@@ -63,6 +69,11 @@ namespace Milionar
             score8.Content = SortedScore[7].Money + "Kč";
             score9.Content = SortedScore[8].Money + "Kč";
             score10.Content = SortedScore[9].Money + "Kč";
+        }
+
+        private void menu_click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new MenuPage(mainFrame));
         }
     }
 }

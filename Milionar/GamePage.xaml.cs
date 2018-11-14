@@ -191,7 +191,7 @@ namespace Milionar
         // Game Over action
         private void gameOver()
         {
-            mainFrame.Navigate(new WinPage(this, mainFrame));
+            mainFrame.Navigate(new WinPage(this, mainFrame, new SendScorePage()));
         }
 
         // Set award backgroun

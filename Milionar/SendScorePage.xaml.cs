@@ -16,29 +16,33 @@ using System.Windows.Shapes;
 namespace Milionar
 {
     /// <summary>
-    /// Interakční logika pro MenuPage.xaml
+    /// Interakční logika pro SendScorePage.xaml
     /// </summary>
-    public partial class MenuPage : Page
+    public partial class SendScorePage : Page
     {
-        public MenuPage()
+        public SendScorePage()
         {
             InitializeComponent();
         }
 
         Frame mainFrame = new Frame();
-        public MenuPage(Frame frame) : this()
+        WinPage winPage = new WinPage();
+        GamePage gamePage = new GamePage();
+
+        public SendScorePage(Frame frame, WinPage win, GamePage game) : this()
         {
             mainFrame = frame;
+            winPage = win;
+            gamePage = game;
         }
 
-        private void highScores_click(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Navigate(new HighScoresPage(mainFrame));
-        }
+        public string SendName;
 
-        private void newGame_click(object sender, RoutedEventArgs e)
+        private void sendScore_click(object sender, RoutedEventArgs e)
         {
+            SendName = nameInput.Text;
 
+            mainFrame.Navigate(new WinPage(gamePage, mainFrame, this));
         }
     }
 }

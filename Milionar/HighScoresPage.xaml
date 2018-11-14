@@ -5,48 +5,46 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Milionar"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="676" d:DesignWidth="1200"
       Title="HighScoresPage">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="1" Grid.Column="0" Grid.Row="0"></Label>
-        <Label Content="2" Grid.Column="0" Grid.Row="1"></Label>
-        <Label Content="3" Grid.Column="0" Grid.Row="2"></Label>
-        <Label Content="4" Grid.Column="0" Grid.Row="3"></Label>
-        <Label Content="5" Grid.Column="0" Grid.Row="4"></Label>
-        <Label Content="6" Grid.Column="0" Grid.Row="5"></Label>
-        <Label Content="7" Grid.Column="0" Grid.Row="6"></Label>
-        <Label Content="8" Grid.Column="0" Grid.Row="7"></Label>
-        <Label Content="9" Grid.Column="0" Grid.Row="8"></Label>
-        <Label Content="10" Grid.Column="0" Grid.Row="9"></Label>
+        <StackPanel Grid.Column="0" Grid.RowSpan="2">
+            <Label Content="1" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="2" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="3" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="4" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="2" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="6" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="7" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="8" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="9" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+            <Label Content="10" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.RowSpan="2">
+            <Label x:Name="score1" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score2" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score3" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score4" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score5" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score6" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score7" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score8" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score9" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+            <Label x:Name="score10" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
+        </StackPanel>
 
-        <Label x:Name="score1" Content="null" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score2" Content="null" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score3" Content="null" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score4" Content="null" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score5" Content="null" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score6" Content="null" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score7" Content="null" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score8" Content="null" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score9" Content="null" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right"></Label>
-        <Label x:Name="score10" Content="null" Grid.Column="1" Grid.Row="9" HorizontalAlignment="Right"></Label>
+        <Button Content="Menu" FontSize="20" Grid.Row="1" Grid.ColumnSpan="3" Width="200" Height="50" Click="menu_click"></Button>
 
     </Grid>
 </Page>
