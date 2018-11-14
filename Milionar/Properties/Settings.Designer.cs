@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Milionar_New.Properties
+namespace Milionar.Properties
 {
 
 

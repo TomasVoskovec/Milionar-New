@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Milionar_New
+namespace Milionar
 {
     /// <summary>
     /// Interakční logika pro MainWindow.xaml
@@ -22,8 +22,8 @@ namespace Milionar_New
     {
         public MainWindow()
         {
-            //sdasdasd
             InitializeComponent();
+            mainFrame.Navigate (new GamePage(mainFrame));
         }
     }
 }
