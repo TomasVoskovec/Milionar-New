@@ -38,7 +38,7 @@ namespace Milionar
 
         private void newGame_click(object sender, RoutedEventArgs e)
         {
-
+            mainFrame.Navigate(new GamePage(mainFrame));
         }
     }
 }

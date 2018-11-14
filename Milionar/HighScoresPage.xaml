@@ -31,6 +31,18 @@
             <Label Content="9" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
             <Label Content="10" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10"></Label>
         </StackPanel>
+        <StackPanel Grid.Column="1" Grid.RowSpan="2">
+            <Label x:Name="name1" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name2" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name3" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name4" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name5" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name6" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name7" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name8" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name9" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+            <Label x:Name="name10" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" Margin="10"></Label>
+        </StackPanel>
         <StackPanel Grid.Column="2" Grid.RowSpan="2">
             <Label x:Name="score1" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>
             <Label x:Name="score2" Content="null" Foreground="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10"></Label>

@@ -137,6 +137,45 @@ namespace Milionar
 
             Question question3 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
             questions.Add(question3);
+
+            Question question4 = new Question("Kolik gramů má 1 kilo?", "1000", new List<string> { "100000", "100", "10000" });
+            questions.Add(question4);
+
+            Question question5 = new Question("Kolik prstů má slon na jedné noze", "4", new List<string> { "5", "6", "3" });
+            questions.Add(question5);
+
+            Question question6 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question6);
+
+            Question question7 = new Question("Kolik gramů má 1 kilo?", "1000", new List<string> { "100000", "100", "10000" });
+            questions.Add(question7);
+
+            Question question8 = new Question("Kolik prstů má slon na jedné noze", "4", new List<string> { "5", "6", "3" });
+            questions.Add(question8);
+
+            Question question9 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question9);
+
+            Question question10 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question10);
+
+            Question question11 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question11);
+
+            Question question12 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question12);
+
+            Question question13 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question13);
+
+            Question question14 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question14);
+
+            Question question15 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question15);
+
+            Question question16 = new Question("Slovenské národní jídlo halušky jsou", "noky z bramorového těsta", new List<string> { "bezvaječné těstoviny", "vaječné těstoviny", "smažené plátky uzeného masa" });
+            questions.Add(question16);
         }
 
         void loadQuestion(int questionIndex)
@@ -191,7 +230,7 @@ namespace Milionar
         // Game Over action
         private void gameOver()
         {
-            mainFrame.Navigate(new WinPage(this, mainFrame, new SendScorePage()));
+            mainFrame.Navigate(new WinPage(this, mainFrame));
         }
 
         // Set award backgroun
@@ -213,7 +252,7 @@ namespace Milionar
             {
                 price3.Style = active;
                 price2.Style = pased;
-                gameOver();
+                //gameOver();
             }
             if (rightAnsweres == 3)
             {

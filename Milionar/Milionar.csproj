@@ -69,9 +69,6 @@
     </Compile>
     <Compile Include="Question.cs" />
     <Compile Include="Score.cs" />
-    <Compile Include="SendScorePage.xaml.cs">
-      <DependentUpon>SendScorePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WinPage.xaml.cs">
       <DependentUpon>WinPage.xaml</DependentUpon>
     </Compile>
@@ -99,10 +96,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SendScorePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

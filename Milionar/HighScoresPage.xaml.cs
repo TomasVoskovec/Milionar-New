@@ -55,20 +55,35 @@ namespace Milionar
             {
                 for (int i = SortedScore.Count(); i <= 10; i++)
                 {
-                    SortedScore.Add(new Score(0, 0));
+                    Score generatedScore = new Score(0, 0);
+                    generatedScore.Name = "null";
+
+                    SortedScore.Add(generatedScore);
+
                 }
             }
 
-            score1.Content = SortedScore[0].Money + "Kč";
-            score2.Content = SortedScore[1].Money + "Kč";
-            score3.Content = SortedScore[2].Money + "Kč";
-            score4.Content = SortedScore[3].Money + "Kč";
-            score5.Content = SortedScore[4].Money + "Kč";
-            score6.Content = SortedScore[5].Money + "Kč";
-            score7.Content = SortedScore[6].Money + "Kč";
-            score8.Content = SortedScore[7].Money + "Kč";
-            score9.Content = SortedScore[8].Money + "Kč";
-            score10.Content = SortedScore[9].Money + "Kč";
+            score1.Content = SortedScore[0].Money + " Kč";
+            score2.Content = SortedScore[1].Money + " Kč";
+            score3.Content = SortedScore[2].Money + " Kč";
+            score4.Content = SortedScore[3].Money + " Kč";
+            score5.Content = SortedScore[4].Money + " Kč";
+            score6.Content = SortedScore[5].Money + " Kč";
+            score7.Content = SortedScore[6].Money + " Kč";
+            score8.Content = SortedScore[7].Money + " Kč";
+            score9.Content = SortedScore[8].Money + " Kč";
+            score10.Content = SortedScore[9].Money + " Kč";
+
+            name1.Content = SortedScore[0].Name;
+            name2.Content = SortedScore[1].Name;
+            name3.Content = SortedScore[2].Name;
+            name4.Content = SortedScore[3].Name;
+            name5.Content = SortedScore[4].Name;
+            name6.Content = SortedScore[5].Name;
+            name7.Content = SortedScore[6].Name;
+            name8.Content = SortedScore[7].Name;
+            name9.Content = SortedScore[8].Name;
+            name10.Content = SortedScore[9].Name;
         }
 
         private void menu_click(object sender, RoutedEventArgs e)

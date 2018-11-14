@@ -29,16 +29,14 @@ namespace Milionar
 
         Frame main = new Frame();
         GamePage game = new GamePage();
-        SendScorePage sendScore = new SendScorePage();
 
         Score score = new Score(0,0);
         List<Score> scores = new List<Score>();
 
-        public WinPage(GamePage gamePage, Frame mainFrame, SendScorePage sendScorePage) : this()
+        public WinPage(GamePage gamePage, Frame mainFrame) : this()
         {
             game = gamePage;
             main = mainFrame;
-            sendScore = sendScorePage;
 
             writePrice();
 
@@ -79,8 +77,6 @@ namespace Milionar
 
         private void save_click(object sender, RoutedEventArgs e)
         {
-            main.Navigate(new SendScorePage(main, this, game));
-
             List<int> scoreList = game.GetScore();
             List<Score> scores = new List<Score>();
             if(jsonReadScore() != null)
@@ -89,12 +85,19 @@ namespace Milionar
             }
 
             Score newScore = new Score(scoreList[1], scoreList[0]);
-            newScore.Name = sendScore.SendName;
+            if (nameInput.Text == "")
+            {
+                newScore.Name = "Noname";
+            }
+            else
+            {
+                newScore.Name = nameInput.Text;
+            }
             scores.Add(newScore);
 
             jsonWriteScore(scores);
 
-            main.Navigate(new HighScoresPage());
+            main.Navigate(new HighScoresPage(main));
         }
 
         private void menu_click(object sender, RoutedEventArgs e)
